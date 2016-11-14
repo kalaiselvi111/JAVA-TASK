@@ -1,0 +1,35 @@
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Solution{
+	public static void main(String args[]) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("1.Circle \n2.Triangle \n3.Rectangle");
+		int choice=Integer.parseInt(bf.readLine());
+		switch(choice){
+			case 1:
+			System.out.println("\nCIRCLE.....Enter the radius");
+			Circle cObject=new Circle();
+			cObject.radius=Double.parseDouble(bf.readLine());
+			cObject.area();
+			break;
+			case 2:
+			System.out.println("\nTRIANGLE.....Enter the Base and Height");
+			Triangle tObject=new Triangle();
+			tObject.base=Double.parseDouble(bf.readLine());
+			tObject.height=Double.parseDouble(bf.readLine());
+			tObject.area();
+			break;
+			case 3:
+			System.out.println("\nRECTANGLE......Enter the Length and breadth");
+			Rectangle rObject=new Rectangle();
+			rObject.length=Double.parseDouble(bf.readLine());
+			rObject.breadth=Double.parseDouble(bf.readLine());
+			rObject.area();
+			break;
+
+
+		}
+	}
+}
