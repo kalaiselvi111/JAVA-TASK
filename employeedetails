@@ -1,0 +1,64 @@
+
+import java.util.Arrays;
+import java.io.*;
+public class Employee {
+public static void main(String args[]) {
+		String Ename[]={"Ashish","Sushma","Rahul","Chahat","Ranjan","Suman","Tanmay"};
+		String Desg[]={"e","c","k","r","m","e","c"};
+		String Dept[]={"R&D","PM","ACCT","FRONT DESK","ENGG","MANUFACTURING","PM"};
+		int Eno[]={1001,1002,1003,1004,1005,1006,1007};
+		int Basic[]={20000,30000,10000,12000,50000,23000,22000};
+		int HRA[]={8000,12000,8000,6000,12000,9000,12000}; 
+		int DA=0,DA1=0;
+		int IT[]={3000,9000,1000,2000,20000,4400,10000};
+StringDate[]={"01/04/2009","23/08/2012","12/11/2008","29/01/2013","16/07/2005","01/01      /2000",       "12/06/2006"};
+		int Salary[]=new int[10];
+		int n=Eno.length;
+		int i,j;
+		int a=Integer.parseInt(args[0]);
+		System.out.println("EMP.NO"+" "+"EMP.NAME"+" "+"DEPT"+" "+"DESIG"+" "SALARY"+"\n");
+		for(i=0;i<5;i++){
+			if(a==Eno[i])
+			DA=i;
+			}
+		if(Desg[DA].equals("e"))
+			DA1=20000;
+		if(Desg[DA].equals("c"))
+			DA1=32000;
+		if(Desg[DA].equals("k"))
+			DA1=12000;
+		if(Desg[DA].equals("r"))
+			DA1=15000;
+		if(Desg[DA].equals("m"))
+			DA1=40000;
+		for(i=0;i<n;i++){
+			Salary[i]=Basic[i]+HRA[i]+DA1-IT[i];
+			}
+switch(a) {
+		case 1001:System.out.println(Eno[0]+" "+Ename[0]+" "+Dept[0]+" "+Desg[0]+” "+Salary[0]);
+		break;
+		case 1002:System.out.println(Eno[1]+" "+Ename[1]+" "+Dept[1]+" "+Desg[1]+" "+Salary[1]);
+		break;
+		case 1003:System.out.println(Eno[2]+" "+Ename[2]+" "+Dept[2]+" "+Desg[2]+" "+Salary[2]);
+		break;
+		case 1004:System.out.println(Eno[3]+" "+Ename[3]+" "+Dept[3]+" "+Desg[3]+" "+Salary[3]);
+		break;
+		case 1005:System.out.println(Eno[4]+" "+Ename[4]+" "+Dept[4]+" "+Desg[4]+" "+Salary[4]);
+		break;
+		case 1006:System.out.println(Eno[5]+" "+Ename[5]+" "+Dept[5]+" "+Desg[5]+" "+Salary[5]);
+		break;
+		case 1007:System.out.println(Eno[6]+" "+Ename[6]+" "+Dept[6]+" "+Desg[6]+" "+Salary[6]);
+		break;
+		default:System.out.println("Invalid Employee ID");
+		 }
+	 }
+  }
+		
+
+
+
+
+ 
+
+
+
